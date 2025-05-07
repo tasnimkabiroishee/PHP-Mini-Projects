@@ -1,21 +1,32 @@
 <?php 
+// First number
+$num1 = 10; 
 
-// Declare a variable called $name and assign it a string
-$name = "John Doe"; 
+// Second number
+$num2 = 5; 
 
-// Declare a variable called $email and assign it an email string
-$email = "john@example.com"; 
+// The operation to perform: +, -, *, or /
+$operation = '+'; 
 
-// Declare a variable called $phone and assign it a phone number string
-$phone = "123-456-7890"; 
-
-// Output the name inside an <h1> HTML tag
-echo "<h1>$name</h1>"; 
-
-// Output the email inside a <p> tag with label
-echo "<p>Email: $email</p>"; 
-
-// Output the phone number inside a <p> tag with label
-echo "<p>Phone: $phone</p>"; 
-
+// If the operation is addition
+if ($operation == '+') {
+    echo $num1 + $num2; 
+} 
+// If the operation is subtraction
+elseif ($operation == '-') {
+    echo $num1 - $num2; 
+} 
+// If the operation is multiplication
+elseif ($operation == '*') {
+    echo $num1 * $num2; 
+} 
+// If the operation is division
+elseif ($operation == '/') {
+    echo $num1 / $num2; 
+} 
+// If the operation is not valid
+else {
+    echo "Invalid operation";
+}
 ?>
+
